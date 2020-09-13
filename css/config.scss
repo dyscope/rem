@@ -1,0 +1,186 @@
+//colors
+$black: #000;
+$white: #fff;
+$color_tundora_approx: #444;
+$color_tree_poppy_approx: #ff9720;
+$color_cod_gray_approx: #0a0a0a;
+$color_heavy_metal_approx: #2d2d2d;
+$color_fuscous_gray_approx: #4f4f4f;
+$color_romance_approx: #fefefe;
+$color_black_haze_approx: #f7f7f7;
+$color_storm_dust_approx: #635f5f;
+$color_mine_shaft_approx: #333;
+$color_chicago_approx: #5d5d5d;
+$color_azure_radiance_approx: #0878ec;
+$color_dodger_blue_approx: #268df7;
+$color_silver_chalice_approx: #adadad;
+$color_stack_approx: #8a8a8a;
+$color_shark_approx: #242424;
+$color_celeste_approx: #d1d1d1;
+$color_quill_gray_approx: #d2d2d2;
+$color_mercury: #e5e5e5;
+$color_pale_slate_approx: #c3c3c3;
+$color_pink_swan_approx: #bababa;
+$color_mercury_approx: #e3e3e3;
+$color_scotch_mist_approx: #ffd;
+$color_tango_approx: #f47e1f;
+$color_gray_nurse_approx: #e9e9e9;
+$color_delta_approx: #a3a3a3;
+$color_deep_cerulean_approx: #007baf;
+$color_gallery_approx: #eee;
+$color_mint_julep_approx: #f8eec2;
+$color_wild_sand: #f4f4f4;
+$color_mountain_mist_approx: #919090;
+$color_alabaster_approx: #fcfcfc;
+$color_alto_approx: #dcdcdc;
+$color_star_dust_approx: #a0a0a0;
+$color_carrot_orange_approx: #f68d1d;
+$color_dove_gray_approx: #6e6e6e;
+$color_snowy_mint_approx: #d7ffd7;
+$color_green_approx: #00d500;
+
+//opacity
+$white_90: rgba(255, 255, 255, .9);
+$black_10: rgba(0, 0, 0, 0.1);
+$black_20: rgba(0, 0, 0, 0.2);
+$black_30: rgba(0, 0, 0, 0.3);
+
+//fonts
+$open_sans: Open Sans;
+$sans_serif: sans-serif;
+$pfd_in_text: PFDinTextCondPro-Regular;
+
+$fsize0_78: 0.78em;
+$fsize0_86: 0.86em;
+$fsize0_89: 0.89em;
+$fsize0_9: 0.9em;
+$fsize0_93: 0.93em;
+$fsize0_97: 0.97em;
+$fsize1: 1em;
+$fsize1_06: 1.06em;
+$fsize1_13: 1.13em;
+$fsize1_2: 1.2em;
+$fsize1_3: 1.3em;
+$fsize1_4: 1.4em;
+$fsize1_48: 1.48em;
+$fsize1_5: 1.5em;
+$fsize1_6: 1.6em;
+$fsize1_7: 1.7em;
+$fsize2_4: 2.4em;
+            
+//urls
+$bg: url(../img/bg.jpg);
+$info_icons1: url(../img/info-icons.png);
+$arrows: url(../img/arrows.png);
+$sepline: url(../img/sepline.png);
+$profile: url(../img/profile.png);
+$logo: url(../img/logo.png);
+$coins: url(../img/coins.png);
+$arrows2: url(../img/arrows2.png);
+$search: url(../img/srch.png);
+$cart: url(../img/cart.png);
+$cross: url(../img/cross.png);
+$close1: url(../img/close.png);
+$info_icons2: url(../img/info2-icons.png);
+$like: url(../img/like.png);
+$size: url(../img/size.png);
+$zoom: url(../img/zoom.png);
+$close2: url(../img/close-btn.png);
+
+
+//@extend-elements
+//original selectors
+//input.qtyplus, input.qtyminus
+%extend_1 {
+	width: 33px;
+	height: 33px;
+	border: none;
+	background: $color_mercury_approx;
+	cursor: pointer;
+	color: $color_storm_dust_approx;
+	font-size: $fsize1_4;
+	float: left;
+}
+
+//original selectors
+//.prev, .next
+%extend_2 {
+	background: transparent;
+	cursor: pointer;
+	width: 12px;
+	height: 30px;
+	border: none;
+	padding: 0;
+	position: absolute;
+	top: 34%;
+}
+
+//original selectors
+//.toggle-amount input.qtyplus, .toggle-amount input.qtyminus
+%extend_3 {
+	background: $white;
+	border: 1px solid $color_gray_nurse_approx;
+	width: 30px;
+	height: 30px;
+}
+
+//original selectors
+//.prev-ps, .next-ps
+%extend_4 {
+	background: transparent;
+	cursor: pointer;
+	width: 30px;
+	height: 132px;
+	border: none;
+	padding: 0;
+	position: absolute;
+	bottom: 30px;
+	display: block;
+}
+
+//original selectors
+//.prev-ps span, .next-ps span
+%extend_5 {
+	width: 12px;
+	height: 30px;
+	display: block;
+	margin-left: 9px;
+}
+
+//original selectors
+//.prev2, .next2
+%extend_6 {
+	background: transparent;
+	cursor: pointer;
+	width: 30px;
+	height: 32px;
+	border: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	display: block;
+	margin-top: 20px;
+}
+
+//original selectors
+//.prev-ps2, .next-ps2
+%extend_7 {
+	background: transparent;
+	cursor: pointer;
+	width: 30px;
+	height: 132px;
+	border: none;
+	padding: 0;
+	position: absolute;
+	bottom: 30px;
+	display: block;
+}
+
+//original selectors
+//.prev-ps2 span, .next-ps2 span
+%extend_8 {
+	width: 12px;
+	height: 30px;
+	display: block;
+	margin-left: 9px;
+}

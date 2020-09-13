@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Карточка товара</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <nav class="navbar-top">
+            <div class="container">
+                <div class="city">
+                    <select class="city-select">
+                        <option value="saintp">Санкт-Петербург</option>
+                        <option value="moscow">Москва</option>
+                        <option value="novosib">Новосибирск</option>
+                     </select>
+                 </div>
+                 <ul class="topnav">
+                    <li><a href="#">Доставка и оплата</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Сотрудничество</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Информация</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li class="profile-link"><a href="#">Личный кабинет</a></li>
+                    <li class="link3d"><a href="#">Сделать <span>3D</span> дизайн</a></li>
+                 </ul>
+             </div>
+        </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="logobox">
+                    <a href="#" class="logo"></a>
+                    <p><span>(812)</span> 935-98-57</p>
+                    <a class="callbtn" href="#">Обратная связь</a>
+                    <a class="storebtn" href="#">Магазин</a>
+                </div>
+                <div class="banners">
+                    <a href="#"><img src="img/3ddesign.png" alt=""/></a>
+                    <a href="#"><img src="img/delivery.png" alt=""/></a>
+                    <a href="#"><img src="img/exchange.png" alt=""/></a>
+                    <div class="txt-running">
+                        Дизайн проект представляет собой два 3D ракурса на ванную комнату, развертки стен и смету с расчетом количества Дизайн проект представляет собой два 3D ракурса на ванную комнату, развертки стен и смету с расчетом количества 
+                    </div>
+                </div>
+                <div class="order">
+                    <p class="grad">Минимальный заказ 10 000 руб.</p>
+                    <p>Клиенты, которые покупали у нас ранее, могут докупить на любую сумму</p>
+                </div>
+            </div>
+        </div>
+    </header><!-- .header-->
+    
+    <div class="middle">
+        <div class="container">
+        
+        	<div class="maincont">
+        		<main class="content">
+        			<div class="topmain">
+                        <div class="search-box">
+                            <form action="#" method="post" class="search">
+                                <input class="txtinp" type="search" placeholder="Поиск по названию товара, коллекции или фабрики"/>
+                                <input class="submit" type="submit" name="submit" value="" />
+                            </form>
+                        </div>
+                        <div class="minicart">
+                            <a href="#">
+                                <span>Корзина</span>
+                                <span class="amount">1</span>
+                                <span class="total">2 980 руб.</span>
+                            </a>
+                        </div>
+                        <div class="expanded-cart">
+                            <button class="close"></button>
+                            <div class="mcrt_item">
+                                <figure>
+                                    <a href="#"><img src="img/thumb.jpg" alt=""></a>
+                                </figure>
+                                <div class="mcrt_descr">
+                                    <p>Плитка настенная белая 20 x 30 см</p>
+                                    <span>Код товара: 12980</span>
+                                </div>
+                                <div class="mcrt_amount">
+                                    <p>Количество кв.м(12шт)</p>
+                                    <form action="#">
+                                        <input type="button" value="-" class="qtyminus" data-field="quantity" />
+                                        <input type="text" name="quantity" value="1" class="qty" />
+                                        <span>570 руб.</span>
+                                        <input type="button" value="+" class="qtyplus" data-field="quantity" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mcrt_bottom">
+                                <div class="total_items">Всего товаров: <strong>1</strong></div>
+                                <div class="mcrt_price">На сумму: <strong>570</strong> <span>руб.</span></div>
+                                <div class="mcrt_btns">
+                                    <a href="#" class="tocart">Оформить</a>
+                                    <a href="#" class="clear"><span>Очистить</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mainbox product">
+                        <div class="bread">
+                            <ul>
+                                <li><a class="curr" href="#">Каталог</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">Плитка</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">Kerama Marazzi</a></li>
+                            </ul>
+                        </div>
+                        
+                        <h1>Коллекция плитки Kerama Marazzi Вилланелла</h1>
+                        
+                        <div class="product-view">
+                        
+                            <div class="product-left">
+                                <div class="product-img-box">
+                                    <div class="mid">
+                                        <img src="img/product1.jpg" alt="">
+                                    </div>
+                                    <button class="prev-ps"><span></span></button>
+                                    <button class="next-ps"><span></span></button>
+                                    <div class="carousel">
+                                        <ul>
+                                            <li class="active"><img src="img/product1.jpg" alt=""></li>
+                                            <li><img src="img/product2.jpg" alt="" ></li>
+                                            <li><img src="img/product1.jpg" alt="" ></li>
+                                            <li><img src="img/product2.jpg" alt="" ></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- .product-img-box -->
+                            </div><!-- .product-left -->
+                            
+                            <div class="product-shop">
+                                <div class="price-info">
+                                    <p class="oldprice">820 <i class="fa fa-rub"></i></p>
+                                    <p class="newprice">от <span>700</span> <i class="fa fa-rub"></i> / <small>м</small><sup><small>2</small></sup></p>
+                                </div>
+                                <a class="product-btn" href="#">Выбрать плитку</a>
+                                <p class="limited">Количество товара ограничено</p>
+                                <div class="product-description">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Код товара:</td><td>311835</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Страна:</td><td>Россия</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Бренд:</td><td>Kerama Marazzi</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Коллекция:</td><td>Неополитанская</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="product-properties">
+                                    <h3>Основные свойства</h3>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Категория:</td><td>керамика</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Назначение:</td><td>только для стен</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Поверхность:</td><td>глянцевая</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Стиль:</td><td>Неополитанская</td>
+                                            </tr>
+                                             <tr>
+                                                <td>Размер:</td><td>9 x 25 x 0,9</td>
+                                            </tr>
+                                             <tr>
+                                                <td>Цвет:</td><td>бежевый</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                    
+                                </div>
+                            </div><!-- .product-shop -->
+                            
+                            <div class="small-carousrl">
+                                <h3>Другие коллекции фабрики Kerama Marazzi</h3>
+                                <div class="collslider">
+                                    <button class="prev2"></button>
+                                    <button class="next2"></button>
+                                    <div class="collections">
+                                        <ul>
+                                            <li><a href="#">Cerrol</a></li>
+                                            <li><a href="#">Estima</a></li>
+                                            <li><a href="#">Cresaro</a></li>
+                                            <li><a href="#">Navarti</a></li>
+                                            <li><a href="#">Viva Ceramica</a></li>
+                                            <li><a href="#">Cerrol</a></li>
+                                            <li><a href="#">Estima</a></li>
+                                            <li><a href="#">Navarti</a></li>
+                                            <li><a href="#">Estima</a></li>
+                                            <li><a href="#">Cresaro</a></li>
+                                            <li><a href="#">Viva Ceramica</a></li>
+                                            <li><a href="#">Cresaro</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="other">                   
+                                <ul>
+                                    <li>
+                                        <div class="otherbox">
+                                            <img src="img/relimg1.jpg" alt="">
+                                            <div class="rstitle"><a href="#">Плитка настенная</a></div>
+                                            <p class="odescr">Настенная плитка <span>15х40х0</span></p>
+                                            <p class="ocode">Код товара: <strong>223488</strong></p>
+                                            <div class="rsprice">Цена: 1 818 руб/ кв.м.</div>
+                                            <div class="rsbot">
+                                                <a class="rstocart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Положить в корзину</a>
+                                                <div class="toggle-amount">
+                                                    <p>Количество шт.</p>
+                                                    <form action="#">
+                                                        <input type="button" value="-" class="qtyminus" data-field="quantity" />
+                                                        <input type="text" name="quantity" value="1" class="qty" />
+                                                        <span>0 руб.</span>
+                                                        <input type="button" value="+" class="qtyplus" data-field="quantity" />
+                                                    </form>
+                                                    <div class="removeb">
+                                                        <a href="#">Убрать из корзины</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="otherbox">
+                                            <img src="img/relimg2.jpg" alt="">
+                                            <div class="rstitle"><a href="#">Плитка настенная</a></div>
+                                            <p class="odescr">Настенная плитка <span>15х40х0</span></p>
+                                            <p class="ocode">Код товара: <strong>223488</strong></p>
+                                            <div class="rsprice">Цена: 1 818 руб/ кв.м.</div>
+                                            <div class="rsbot">
+                                                <a class="rstocart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Положить в корзину</a>
+                                                <div class="toggle-amount">
+                                                    <p>Количество шт.</p>
+                                                    <form action="#">
+                                                        <input type="button" value="-" class="qtyminus" data-field="quantity" />
+                                                        <input type="text" name="quantity" value="1" class="qty" />
+                                                        <span>0 руб.</span>
+                                                        <input type="button" value="+" class="qtyplus" data-field="quantity" />
+                                                    </form>
+                                                    <div class="removeb">
+                                                        <a href="#">Убрать из корзины</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="otherbox">
+                                            <img src="img/relimg3.jpg" alt="">
+                                            <div class="rstitle"><a href="#">Плитка настенная</a></div>
+                                            <p class="odescr">Настенная плитка <span>15х40х0</span></p>
+                                            <p class="ocode">Код товара: <strong>223488</strong></p>
+                                            <div class="rsprice">Цена: 1 818 руб/ кв.м.</div>
+                                            <div class="rsbot">
+                                                <a class="rstocart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Положить в корзину</a>
+                                                <div class="toggle-amount">
+                                                    <p>Количество шт.</p>
+                                                    <form action="#">
+                                                        <input type="button" value="-" class="qtyminus" data-field="quantity" />
+                                                        <input type="text" name="quantity" value="1" class="qty" />
+                                                        <span>0 руб.</span>
+                                                        <input type="button" value="+" class="qtyplus" data-field="quantity" />
+                                                    </form>
+                                                    <div class="removeb">
+                                                        <a href="#">Убрать из корзины</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="otherbox">
+                                            <img src="img/relimg4.jpg" alt="">
+                                            <div class="rstitle"><a href="#">Плитка настенная</a></div>
+                                            <p class="odescr">Настенная плитка <span>15х40х0</span></p>
+                                            <p class="ocode">Код товара: <strong>223488</strong></p>
+                                            <div class="rsprice">Цена: 1 818 руб/ кв.м.</div>
+                                            <div class="rsbot">
+                                                <a class="rstocart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Положить в корзину</a>
+                                                <div class="toggle-amount">
+                                                    <p>Количество шт.</p>
+                                                    <form action="#">
+                                                        <input type="button" value="-" class="qtyminus" data-field="quantity" />
+                                                        <input type="text" name="quantity" value="1" class="qty" />
+                                                        <span>0 руб.</span>
+                                                        <input type="button" value="+" class="qtyplus" data-field="quantity" />
+                                                    </form>
+                                                    <div class="removeb">
+                                                        <a href="#">Убрать из корзины</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>                                                                                                                      
+                                </ul>
+                            </div><!-- .other -->
+                            
+                        </div><!-- .product-view -->
+   
+                    </div>
+        		</main><!-- .content -->
+        	</div><!-- .maincont-->
+        
+        	<aside class="left-sidebar">
+                <div class="catalog-header">Каталог товаров
+                    <button type="button" class="hamb">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+        		<ul class="leftnav">
+                    <li><a href="#">Тип товара</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Назначение</a></li>
+                    <li><a href="#">Цена</a></li>
+                    <li><a href="#">Тип поверхности</a></li>
+                    <li><a href="#">Стиль</a></li>
+                    <li><a href="#">Форма</a></li>
+                    <li><a href="#">Размер</a></li>
+                    <li><a href="#">Цвет</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Коллекция</a></li>
+                    <li><a href="#">Все бренды</a></li>
+                </ul>
+                <div class="reset-filter"><a href="#">Сбросить все фильтры</a></div>
+        	</aside><!-- .left-sidebar -->
+            
+        </div><!-- .wrapper-->
+    </div><!-- .middle-->
+</div><!-- .wrapper-->
+
+<footer class="footer">
+	<div class="in-footer">
+        <div class="b_menu_1 b_menu">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="b_menu_2 b_menu">
+            <ul>
+                <li><a href="#">Условия доставки</a></li>
+                <li><a href="#">Оплата товара</a></li>
+                <li><a href="#">Получение и возврат</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="b_menu_3 b_menu">
+            <ul>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Ремонт и отделка</a></li>
+                <li><a href="#">3D Дизайн</a></li>
+                <li><a href="#">Загородное строительство</a></li>
+                <li><a href="#">Установка и подключение</a></li>
+                <li><a href="#">Калькулятор</a></li>
+            </ul>
+        </div>
+        <div class="b_info">
+            <a href="#" class="logo"></a>
+            <ul>
+                <li class="tel"><a href="#">+7 (812) 935 08 57</a></li>
+                <li class="mail"><a href="#">9350857@mail.ru</a></li>
+                <li class="rcll"><a href="#">Обатная связь</a></li>
+                <li class="str"><a href="#">Магазин</a></li>
+            </ul>
+            <a class="share" href="#">Поделиться <span></span></a>
+        </div>
+    </div>
+</footer><!-- .footer -->
+
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplemarquee.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousellite.min.js"></script>
+<script type="text/javascript" src="js/jquery.popupoverlay.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>

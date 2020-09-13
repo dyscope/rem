@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Каталог</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <nav class="navbar-top">
+            <div class="container">
+                <div class="city">
+                    <select class="city-select">
+                        <option value="saintp">Санкт-Петербург</option>
+                        <option value="moscow">Москва</option>
+                        <option value="novosib">Новосибирск</option>
+                     </select>
+                 </div>
+                 <ul class="topnav">
+                    <li><a href="#">Доставка и оплата</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Сотрудничество</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Информация</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                        <ul>
+                            <li><a href="#">Подменю 1</a>
+                            <li><a href="#">Подменю 2</a>
+                            <li><a href="#">Подменю 3</a>
+                        </ul>
+                    </li>
+                    <li class="profile-link"><a href="#">Личный кабинет</a></li>
+                    <li class="link3d"><a href="#">Сделать <span>3D</span> дизайн</a></li>
+                 </ul>
+             </div>
+        </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="logobox">
+                    <a href="#" class="logo"></a>
+                    <p><span>(812)</span> 935-98-57</p>
+                    <a class="callbtn" href="#">Обратная связь</a>
+                    <a class="storebtn" href="#">Магазин</a>
+                </div>
+                <div class="banners">
+                    <a href="#"><img src="img/3ddesign.png" alt=""/></a>
+                    <a href="#"><img src="img/delivery.png" alt=""/></a>
+                    <a href="#"><img src="img/exchange.png" alt=""/></a>
+                    <div class="txt-running">
+                        Дизайн проект представляет собой два 3D ракурса на ванную комнату, развертки стен и смету с расчетом количества Дизайн проект представляет собой два 3D ракурса на ванную комнату, развертки стен и смету с расчетом количества 
+                    </div>
+                </div>
+                <div class="order">
+                    <p class="grad">Минимальный заказ 10 000 руб.</p>
+                    <p>Клиенты, которые покупали у нас ранее, могут докупить на любую сумму</p>
+                </div>
+            </div>
+        </div>
+    </header><!-- .header-->
+    
+    <div class="middle">
+        <div class="container">
+        
+        	<div class="maincont">
+        		<main class="content">
+        			<div class="topmain">
+                        <div class="search-box">
+                            <form action="#" method="post" class="search">
+                                <input class="txtinp" type="search" placeholder="Поиск по названию товара, коллекции или фабрики"/>
+                                <input class="submit" type="submit" name="submit" value="" />
+                            </form>
+                        </div>
+                        <div class="minicart">
+                            <a href="#">
+                                <span>Корзина</span>
+                                <span class="amount">1</span>
+                                <span class="total">2 980 руб.</span>
+                            </a>
+                        </div>
+                        <div class="expanded-cart">
+                            <button class="close"></button>
+                            <div class="mcrt_item">
+                                <figure>
+                                    <a href="#"><img src="img/thumb.jpg" alt=""></a>
+                                </figure>
+                                <div class="mcrt_descr">
+                                    <p>Плитка настенная белая 20 x 30 см</p>
+                                    <span>Код товара: 12980</span>
+                                </div>
+                                <div class="mcrt_amount">
+                                    <p>Количество кв.м(12шт)</p>
+                                    <form action="#">
+                                        <input type="button" value="-" class="qtyminus" data-field="quantity" />
+                                        <input type="text" name="quantity" value="1" class="qty" />
+                                        <span>570 руб.</span>
+                                        <input type="button" value="+" class="qtyplus" data-field="quantity" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mcrt_bottom">
+                                <div class="total_items">Всего товаров: <strong>1</strong></div>
+                                <div class="mcrt_price">На сумму: <strong>570</strong> <span>руб.</span></div>
+                                <div class="mcrt_btns">
+                                    <a href="#" class="tocart">Оформить</a>
+                                    <a href="#" class="clear"><span>Очистить</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mainbox catpage">
+                        <div class="bread">
+                            <ul>
+                                <li><a class="curr" href="#">Каталог</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">Плитка</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="#">Плитка для ванной</a></li>
+                            </ul>
+                        </div>
+                        <div class="sortbox">
+                            <div class="sort">
+                                <span>Сортировка</span>
+                                <button class="active">сначала дешевые</button>
+                                <button>сначала дорогие</button>
+                            </div>
+                            <div class="count-page">
+                                <span>Выводить по</span>
+                                <button class="active">18</button>
+                                <button>36</button>
+                                <button>108</button>
+                            </div>
+                        </div>
+                        <div class="alphabet">
+                            <ul>
+                                <li><span>Все фабрики</span></li>
+                                <li class="available"><a href="#">a</a></li>
+                                <li class="available"><a href="#">b</a></li>
+                                <li class="available"><a href="#">c</a></li>
+                                <li><a href="#">d</a></li>
+                                <li><a href="#">e</a></li>
+                                <li class="available"><a href="#">f</a></li>
+                                <li><a href="#">g</a></li>
+                                <li class="available"><a href="#">h</a></li>
+                                <li><a href="#">i</a></li>
+                                <li><a href="#">j</a></li>
+                                <li><a href="#">k</a></li>
+                                <li><a href="#">l</a></li>
+                                <li><a href="#">n</a></li>
+                                <li class="available"><a href="#">o</a></li>
+                                <li class="available"><a href="#">p</a></li>
+                                <li><a href="#">q</a></li>
+                                <li><a href="#">r</a></li>
+                                <li class="available"><a href="#">s</a></li>
+                                <li><a href="#">t</a></li>
+                                <li><a href="#">v</a></li>
+                                <li><a href="#">w</a></li>
+                                <li><a href="#">x</a></li>
+                                <li><a href="#">y</a></li>
+                                <li><a href="#">z</a></li>
+                                <li class="available"><a href="#">а</a></li>
+                                <li><a href="#">б</a></li>
+                                <li><a href="#">в</a></li>
+                                <li><a href="#">г</a></li>
+                                <li><a href="#">д</a></li>
+                                <li class="available"><a href="#">е</a></li>
+                                <li class="available"><a href="#">ж</a></li>
+                                <li><a href="#">з</a></li>
+                                <li class="available"><a href="#">и</a></li>
+                                <li><a href="#">к</a></li>
+                                <li><a href="#">л</a></li>
+                                <li><a href="#">м</a></li>
+                                <li><a href="#">н</a></li>
+                                <li><a href="#">о</a></li>
+                                <li><a href="#">п</a></li>
+                                <li class="available"><a href="#">р</a></li>
+                                <li><a href="#">с</a></li>
+                                <li><a href="#">т</a></li>
+                                <li><a href="#">у</a></li>
+                                <li><a href="#">ф</a></li>
+                                <li><a href="#">х</a></li>
+                                <li><a href="#">ш</a></li>
+                                <li><a href="#">э</a></li>
+                            </ul>
+                        </div>
+                        
+                        <h1>Cersanit, плитка и керамогранит</h1>
+     
+                        <div class="catbox">
+                            <ul>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat10.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat11.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat12.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat10.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat11.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat12.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat10.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat11.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                                <li>
+                                    <div class="cat-img">
+                                        <img src="img/cat12.jpg" alt=""/>
+                                    </div>
+                                    <div class="descr">
+                                        <p>Размер: <span>20 х 44</span></p>
+                                        <p>Назначение: <span>только для стен</span></p>
+                                        <p>Поверхность: <span>глянцевая</span></p>
+                                        <p>Стиль: <span>неаполитанская</span></p>
+                                        <p>Страна: <span>Россия</span></p>
+                                    </div>
+                                    <div class="c-title">Cersanit Albero <span>20x44</span></div>
+                                    <div class="cat-title"><a href="#">Посмотреть</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                            
+                        <div class="seemore"><a href="#">Показать еще 18 товаров <span>из 1029</span></a></div>
+   
+   
+                    </div>
+        		</main><!-- .content -->
+        	</div><!-- .container-->
+        
+        	<aside class="left-sidebar">
+                <div class="catalog-header">Каталог товаров
+                    <button type="button" class="hamb">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+        		<ul class="leftnav">
+                    <li><a href="#">Тип товара</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Назначение</a></li>
+                    <li><a href="#">Цена</a></li>
+                    <li><a href="#">Тип поверхности</a></li>
+                    <li><a href="#">Стиль</a></li>
+                    <li><a href="#">Форма</a></li>
+                    <li><a href="#">Размер</a></li>
+                    <li><a href="#">Цвет</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Коллекция</a></li>
+                    <li><a href="#">Все бренды</a></li>
+                </ul>
+                <div class="reset-filter"><a href="#">Сбросить все фильтры</a></div>
+        	</aside><!-- .left-sidebar -->
+            
+        </div><!-- .wrapper-->
+    </div><!-- .middle-->
+</div><!-- .wrapper-->
+
+<footer class="footer">
+	<div class="in-footer">
+        <div class="b_menu_1 b_menu">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="b_menu_2 b_menu">
+            <ul>
+                <li><a href="#">Условия доставки</a></li>
+                <li><a href="#">Оплата товара</a></li>
+                <li><a href="#">Получение и возврат</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="b_menu_3 b_menu">
+            <ul>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Ремонт и отделка</a></li>
+                <li><a href="#">3D Дизайн</a></li>
+                <li><a href="#">Загородное строительство</a></li>
+                <li><a href="#">Установка и подключение</a></li>
+                <li><a href="#">Калькулятор</a></li>
+            </ul>
+        </div>
+        <div class="b_info">
+            <a href="#" class="logo"></a>
+            <ul>
+                <li class="tel"><a href="#">+7 (812) 935 08 57</a></li>
+                <li class="mail"><a href="#">9350857@mail.ru</a></li>
+                <li class="rcll"><a href="#">Обатная связь</a></li>
+                <li class="str"><a href="#">Магазин</a></li>
+            </ul>
+            <a class="share" href="#">Поделиться <span></span></a>
+        </div>
+    </div>
+</footer><!-- .footer -->
+
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplemarquee.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousellite.min.js"></script>
+<script type="text/javascript" src="js/jquery.popupoverlay.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>

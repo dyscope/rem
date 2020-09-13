@@ -1,0 +1,2005 @@
+@import "config";
+body {
+	width: 100%;
+	height: 100%;
+	color: $color_tundora_approx;
+	background: $bg repeat;
+	font-family: $open_sans, $sans_serif;
+	font-size: 15px;
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+}
+.container {
+	width: 1260px;
+	margin: 0 auto;
+}
+a {
+	&:hover {
+		color: $color_tree_poppy_approx;
+	}
+	&.callbtn {
+		background: $info_icons1 no-repeat top left;
+		height: 30px;
+		padding-top: 10px;
+		margin-bottom: 3px;
+	}
+	&.storebtn {
+		background: $info_icons1 no-repeat 0 -43px;
+		height: 20px;
+		padding-top: 5px;
+	}
+	&.tocart {
+		color: $color_scotch_mist_approx;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-left: 16px;
+		padding: 9px 33px;
+		font-size: $fsize0_86;
+		font-weight: 600;
+		background: linear-gradient(to bottom, $color_tree_poppy_approx 0,$color_tango_approx 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_tree_poppy_approx', endcolorstr='$color_tango_approx',gradienttype=0 );
+		&:hover {
+			background: $color_tree_poppy_approx;
+		}
+	}
+	&.clear {
+		font-size: $fsize0_86;
+		color: $color_storm_dust_approx;
+		text-decoration: none;
+		padding-bottom: 3px;
+		padding-left: 11px;
+		margin-top: 8px;
+		background: $cross no-repeat left 3px;
+		span {
+			border-bottom: 1px dotted $color_storm_dust_approx;
+		}
+		&:hover {
+			color: $color_tree_poppy_approx;
+			span {
+				border-bottom: 1px dotted $color_tree_poppy_approx;
+			}
+		}
+	}
+	&.share {
+		width: 198px;
+		height: 42px;
+		float: left;
+		display: block;
+		margin-top: 10px;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		padding: 8px 12px 0 50px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 20px;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 2px 6px 5px 0 $black_20;
+		background: linear-gradient(to bottom, $white 0,$color_gray_nurse_approx 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$color_gray_nurse_approx',gradienttype=0 );
+		span {
+			display: inline-block;
+			background: $like no-repeat;
+			width: 32px;
+			height: 32px;
+			float: right;
+			margin-top: -3px;
+		}
+	}
+	&.back {
+		border: 1px solid $color_quill_gray_approx;
+		padding: 8px 26px 8px 18px;
+		display: inline-block;
+		float: left;
+		color: $color_storm_dust_approx;
+		margin-right: 28px;
+		line-height: 140%;
+		font-weight: 600;
+		&:hover {
+			background: $color_gallery_approx;
+			color: $color_mine_shaft_approx;
+		}
+		&:active {
+			background: $color_gallery_approx;
+			color: $color_mine_shaft_approx;
+		}
+		i {
+			font-size: $fsize1_5;
+			color: $color_silver_chalice_approx;
+			display: inline-block;
+			margin: 0 16px 0 0;
+			float: left;
+		}
+	}
+	&.removed {
+		display: inline-block;
+		float: left;
+		color: $color_mountain_mist_approx;
+		text-transform: none;
+		margin-top: 10px;
+		span {
+			border-bottom: 1px dotted $color_mountain_mist_approx;
+			padding-bottom: 1px;
+		}
+		&:hover span {
+			border: none;
+		}
+	}
+	&.oneclick {
+		float: right;
+		font-weight: 600;
+		padding: 9px 26px;
+		background: $color_gray_nurse_approx;
+		color: $color_storm_dust_approx;
+		border: 1px solid $color_gray_nurse_approx;
+		&:hover {
+			background: $white;
+			color: $color_deep_cerulean_approx;
+			border: 1px solid $color_quill_gray_approx;
+		}
+	}
+	&.to-order {
+		float: right;
+		color: $white;
+		padding: 10px 48px;
+		margin-left: 17px;
+		background: linear-gradient(to bottom, $color_tree_poppy_approx 0,$color_tango_approx 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_tree_poppy_approx', endcolorstr='$color_tango_approx',gradienttype=0 );
+		&:hover {
+			background: $color_tree_poppy_approx;
+		}
+	}
+	&.rstocart {
+		display: block;
+		color: $white;
+		text-decoration: none;
+		line-height: 150%;
+		padding: 7px 0 8px 17px;
+		font-size: $fsize0_93;
+		background: linear-gradient(to bottom, $color_tree_poppy_approx 0,$color_tango_approx 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_tree_poppy_approx', endcolorstr='$color_tango_approx',gradienttype=0 );
+		&:hover {
+			background: $color_tree_poppy_approx;
+		}
+		i {
+			font-size: $fsize1_3;
+			display: inline-block;
+			float: left;
+			margin-right: 12px;
+		}
+	}
+}
+.header {
+	height: 190px;
+	margin-bottom: 11px;
+}
+.navbar-top {
+	height: 40px;
+	border-top: 2px solid $color_cod_gray_approx;
+	background: linear-gradient(to bottom, $color_heavy_metal_approx 0, $color_cod_gray_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_heavy_metal_approx', endcolorstr='$color_cod_gray_approx',gradienttype=0 );
+}
+.city {
+	float: left;
+	margin-top: 5px;
+}
+.topnav {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: 34px;
+	height: 42px;
+	background: $sepline no-repeat top left;
+	li {
+		float: left;
+		position: relative;
+		display: block;
+		height: 40px;
+		background: $sepline no-repeat bottom right;
+		padding-right: 17px;
+		a {
+			text-decoration: none;
+			font-size: $fsize0_93;
+			color: $color_romance_approx;
+			display: block;
+			height: 20px;
+			padding: 10px 17px 10px 24px;
+			&:hover {
+				color: $color_tree_poppy_approx;
+			}
+		}
+		&.profile-link {
+			padding-left: 20px;
+			padding-right: 0;
+			a {
+				background: $profile no-repeat left 11px;
+				padding-left: 24px;
+				font-size: $fsize0_9;
+				padding-top: 12px;
+			}
+		}
+		&.link3d {
+			padding-left: 18px;
+			background: none;
+			padding-right: 0;
+			a {
+				background: $color_tundora_approx;
+				font-size: $fsize0_9;
+				display: table;
+				padding: 7px 43px 6px;
+				margin-top: 5px;
+				border: 1px solid $black;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 2px;
+				height: auto;
+				span {
+					color: $color_tree_poppy_approx;
+				}
+			}
+		}
+		&.haschild a {
+			background: $arrows no-repeat right 16px;
+			&:hover {
+				background: $arrows no-repeat right -9px;
+			}
+		}
+	}
+	ul {
+		display: none;
+		position: absolute;
+		margin-left: 0;
+		list-style: none;
+		padding: 0 0 12px 0;
+		background: $color_cod_gray_approx;
+		li {
+			width: 100%;
+			float: left;
+			background: none;
+			padding: 0;
+			height: auto;
+			a {
+				display: block;
+				padding: 4px 0 4px 24px;
+				color: $color_romance_approx;
+				text-decoration: none;
+				background: none !important;
+				&:hover {
+					color: $color_tree_poppy_approx;
+				}
+			}
+		}
+	}
+}
+.header-content {
+	display: block;
+	height: 148px;
+	width: 100%;
+	background: linear-gradient(to bottom, $white 0, $color_black_haze_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$color_black_haze_approx',gradienttype=0 );
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 2px 2px 4px 0 $black_10;
+}
+.logobox {
+	width: 200px;
+	float: left;
+	padding: 8px 0 0 20px;
+	p {
+		color: $black;
+		font-size: $fsize1_48;
+		margin: 5px 0;
+		span {
+			color: $color_storm_dust_approx;
+		}
+	}
+	a {
+		color: $color_mine_shaft_approx;
+		font-size: $fsize0_97;
+		text-decoration: none;
+		display: table;
+		padding-left: 47px;
+		&:hover {
+			color: $color_tree_poppy_approx;
+		}
+	}
+}
+.logo {
+	width: 171px;
+	height: 33px;
+	display: block;
+	background: $logo no-repeat;
+}
+.banners {
+	margin-top: 6px;
+	padding-left: 16px;
+	float: left;
+}
+.txt-running {
+	width: 718px;
+	color: $color_tundora_approx;
+	font-size: $fsize0_86;
+	background: $white;
+	padding: 6px 10px 8px;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+.order {
+	background: $coins no-repeat top left;
+	height: 120px;
+	width: 256px;
+	float: right;
+	padding-top: 14px;
+	margin-top: 12px;
+	p {
+		color: $color_chicago_approx;
+		font-size: $fsize0_86;
+		line-height: 120%;
+		&.grad {
+			font-size: $fsize1_13;
+			font-weight: 600;
+			padding-left: 84px;
+			line-height: 120%;
+			margin-bottom: 23px;
+			color: $color_mine_shaft_approx;
+		}
+	}
+}
+.middle {
+	width: 100%;
+	padding: 0 0 294px;
+	position: relative;
+	&:after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
+.maincont {
+	width: 100%;
+	float: left;
+}
+.content {
+	padding: 0 0 0 245px;
+}
+.left-sidebar {
+	float: left;
+	width: 234px;
+	margin-left: -100%;
+	position: relative;
+}
+.catalog-header {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	background: linear-gradient(135deg, $color_azure_radiance_approx 0,$color_dodger_blue_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_azure_radiance_approx', endcolorstr='$color_dodger_blue_approx',gradienttype=1 );
+	color: $white;
+	font-size: $fsize1_06;
+	padding: 12px 0 11px 38px;
+	.hamb {
+		float: right;
+		margin-right: 12px;
+	}
+}
+.hamb {
+	background: transparent;
+	cursor: pointer;
+	border: none;
+	.icon-bar {
+		background: $white;
+		display: block;
+		width: 22px;
+		height: 2px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 1px;
+		+ .icon-bar {
+			margin-top: 4px;
+		}
+	}
+}
+.leftnav {
+	margin: 10px 0;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	border-bottom: 1px solid $color_silver_chalice_approx;
+	a {
+		background: $white $arrows2 no-repeat 94% 11px;
+		color: $color_mine_shaft_approx;
+		text-decoration: none;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		font-size: $fsize0_86;
+		display: block;
+		padding: 0.73em 1.07em;
+		border: 1px solid $color_silver_chalice_approx;
+		border-bottom: none;
+		&:hover {
+			background: $white $arrows2 no-repeat 94% -20px;
+			color: $color_tree_poppy_approx;
+		}
+	}
+}
+.reset-filter {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	a {
+		background: linear-gradient(to bottom, $color_stack_approx 0,$color_shark_approx 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_stack_approx', endcolorstr='$color_shark_approx',gradienttype=0 );
+		color: $white;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		font-size: $fsize0_93;
+		padding: 10px 0;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		&:hover {
+			background: $color_shark_approx;
+		}
+	}
+}
+.topmain {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+.search-box {
+	width: 710px;
+	float: left;
+	position: relative;
+	.txtinp {
+		width: 100%;
+		height: 36px;
+		border: 1px solid $color_celeste_approx;
+		padding-left: 36px;
+		color: $color_mine_shaft_approx;
+		font-size: $fsize0_93;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: inset 1px 1px 5px 0 $black_30;
+	}
+	.submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 36px;
+		border: none;
+		cursor: pointer;
+		background: transparent $search no-repeat center;
+	}
+}
+.minicart {
+	float: right;
+	width: 290px;
+	height: 34px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	border: 1px solid $color_dodger_blue_approx;
+	background: linear-gradient(to bottom, $color_black_haze_approx 0,$color_mercury 54%,$color_pale_slate_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_black_haze_approx', endcolorstr='$color_pale_slate_approx',gradienttype=0 );
+	a {
+		text-decoration: none;
+		display: block;
+		width: 237px;
+		height: 100%;
+		padding-left: 55px;
+		background: $cart no-repeat 18px center;
+	}
+	span {
+		color: $black;
+		font-size: $fsize0_93;
+		margin-top: 11px;
+		float: left;
+		&.amount {
+			background: $color_chicago_approx;
+			color: $color_romance_approx;
+			font-size: $fsize0_86;
+			padding: 7px 0;
+			width: 36px;
+			text-align: center;
+			margin: 4px 24px;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: inset 6px 6px 6px 0 $black_20;
+		}
+	}
+}
+.expanded-cart {
+	padding: 20px 15px 10px 18px;
+	display: none;
+	position: absolute;
+	width: 390px;
+	min-height: 183px;
+	background: $white;
+	right: 0;
+	top: 36px;
+	z-index: 99;
+	border: 1px solid $color_celeste_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 2px 2px 3px 0 $black_20;
+	.close {
+		position: absolute;
+		display: block;
+		width: 15px;
+		height: 15px;
+		background: $close1 no-repeat;
+		cursor: pointer;
+		border: none;
+		top: 7px;
+		right: 8px;
+	}
+}
+.mcrt_item {
+	border-bottom: 1px solid $color_pink_swan_approx;
+	padding-bottom: 16px;
+	float: left;
+	width: 100%;
+	figure {
+		width: 68px;
+		height: 68px;
+		float: left;
+		border: 1px solid $color_pink_swan_approx;
+		margin-right: 16px;
+		position: relative;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+.mcrt_descr {
+	width: 120px;
+	float: left;
+	p {
+		font-size: $fsize0_89;
+		color: $black;
+		line-height: 120%;
+		margin-bottom: 11px;
+	}
+	span {
+		font-size: $fsize0_86;
+		color: $color_storm_dust_approx;
+		line-height: 110%;
+	}
+}
+.mcrt_amount {
+	float: right;
+	width: 150px;
+	p {
+		color: $color_storm_dust_approx;
+		font-size: $fsize0_78;
+	}
+	form {
+		text-align: center;
+		position: relative;
+		color: $color_mine_shaft_approx;
+		margin-top: 16px;
+		span {
+			position: absolute;
+			font-size: $fsize0_78;
+			top: 27px;
+			left: 53px;
+		}
+	}
+}
+.qty {
+	text-align: center;
+	font-size: $fsize0_78;
+	border: 1px solid $color_pink_swan_approx;
+	width: 65px;
+	height: 19px;
+	float: left;
+	margin: 0 6px;
+}
+input {
+	&.qtyplus {
+		@extend %extend_1;
+	}
+	&.qtyminus {
+		@extend %extend_1;
+	}
+}
+.mcrt_bottom {
+	width: 100%;
+	float: left;
+	padding-top: 14px;
+}
+.total_items {
+	font-size: $fsize0_86;
+	color: $color_storm_dust_approx;
+	line-height: 110%;
+	width: 49%;
+	float: left;
+	padding-top: 3px;
+	strong {
+		font-weight: 600;
+	}
+}
+.mcrt_price {
+	font-size: $fsize0_86;
+	color: $color_storm_dust_approx;
+	line-height: 110%;
+	width: 47%;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+	strong {
+		font-weight: 600;
+		font-size: $fsize1_7;
+		padding-left: 10px;
+	}
+	span {
+		font-weight: 600;
+		font-size: $fsize1_2;
+	}
+}
+.mcrt_btns {
+	width: 100%;
+	float: left;
+	margin-top: 22px;
+	a {
+		display: table;
+		float: right;
+	}
+}
+.mainbox {
+	width: 1012px;
+	float: left;
+	margin: 10px 0 0 2px;
+	padding: 28px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	background: $white;
+	min-height: 300px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 6px 0 $black_30;
+	&.cart {
+		padding: 16px;
+	}
+	&.catpage {
+		padding: 16px;
+	}
+	&.product {
+		padding: 16px 16px 28px 28px;
+	}
+}
+.catalog {
+	width: 100%;
+	float: left;
+	li {
+		float: left;
+		width: 300px;
+		margin-right: 28px;
+		margin-bottom: 39px;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+}
+.cat-img {
+	width: 100%;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+.cat-title {
+	margin-top: 5px;
+	a {
+		color: $white;
+		font-size: $fsize1_13;
+		font-family: $pfd_in_text;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		padding: 11px 0;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		background: linear-gradient(to bottom, $color_tree_poppy_approx 0,$color_tango_approx 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_tree_poppy_approx', endcolorstr='$color_tango_approx',gradienttype=0 );
+		&:hover {
+			background: $color_tree_poppy_approx;
+		}
+		&:active {
+			background: $color_tree_poppy_approx;
+		}
+	}
+}
+.hometext {
+	width: 100%;
+	float: left;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	padding-right: 45px;
+	padding-bottom: 35px;
+	p {
+		font-size: $fsize0_93;
+		margin-bottom: 10px;
+		line-height: 165%;
+	}
+	h3 {
+		font-size: $fsize1_06;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		font-weight: 600;
+	}
+}
+.footer {
+	width: 1260px;
+	margin: -280px auto 0;
+	height: 280px;
+	position: relative;
+}
+.in-footer {
+	width: 1012px;
+	float: right;
+	height: 280px;
+	display: block;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	padding: 22px 32px;
+	//Instead of the line below you could use @include border-top-left-radius($radius)
+	border-top-left-radius: 3px;
+	//Instead of the line below you could use @include border-top-right-radius($radius)
+	border-top-right-radius: 3px;
+	background: linear-gradient(to bottom, $white 0,$color_gray_nurse_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$color_gray_nurse_approx',gradienttype=0 );
+}
+.b_menu_1 {
+	width: 172px;
+	float: left;
+}
+.b_menu_2 {
+	width: 218px;
+	float: left;
+	padding-left: 36px;
+}
+.b_menu_3 {
+	width: 230px;
+	float: left;
+	padding-left: 48px;
+}
+.b_menu {
+	border-right: 1px solid $color_delta_approx;
+	margin-top: 14px;
+	padding-top: 8px;
+	li {
+		display: block;
+		float: left;
+		width: 100%;
+		margin-bottom: 0.37em;
+		a {
+			color: $color_mine_shaft_approx;
+			text-decoration: none;
+			font-size: $fsize1;
+			line-height: 165%;
+			&:hover {
+				color: $color_tree_poppy_approx;
+			}
+		}
+	}
+}
+.b_info {
+	width: 197px;
+	float: right;
+	.logo {
+		margin-bottom: 15px;
+	}
+	li {
+		display: block;
+		float: left;
+		width: 100%;
+		margin-bottom: 0.37em;
+		padding-left: 32px;
+		&.tel {
+			background: $info_icons2 no-repeat 0 6px;
+		}
+		&.mail {
+			background: $info_icons2 no-repeat 0 -25px;
+		}
+		&.rcll {
+			background: $info_icons2 no-repeat 0 -61px;
+		}
+		&.str {
+			background: $info_icons2 no-repeat 0 -98px;
+		}
+	}
+	a {
+		color: $color_mine_shaft_approx;
+		text-decoration: none;
+		font-size: $fsize1;
+		line-height: 165%;
+		&:hover {
+			color: $color_tree_poppy_approx;
+		}
+	}
+}
+.cart_nav_top {
+	height: 42px;
+	margin-bottom: 25px;
+	a {
+		color: $color_deep_cerulean_approx;
+		text-decoration: none;
+		font-size: $fsize0_86;
+		border: 1px solid $color_quill_gray_approx;
+		width: 49%;
+		padding: 14px 0;
+		display: block;
+		float: left;
+		text-align: center;
+		+ a {
+			float: right;
+		}
+		&.active {
+			background: $color_gallery_approx;
+			color: $color_mine_shaft_approx;
+		}
+		&:hover {
+			background: $color_gallery_approx;
+			color: $color_mine_shaft_approx;
+		}
+	}
+}
+.cart {
+	h1 {
+		color: $color_mine_shaft_approx;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.73em;
+		margin-bottom: 18px;
+	}
+	input[type="checkbox"] {
+		margin: 3px 3px 3px 0;
+	}
+}
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: $color_mine_shaft_approx;
+	width: 100%;
+	margin-bottom: 12px;
+	th {
+		padding: 9px 0;
+		border: none;
+		overflow: hidden;
+		//Instead of the line below you could use @include word-break($value)
+		word-break: normal;
+		color: $black;
+		font-size: $fsize0_86;
+		text-transform: uppercase;
+		background: $color_mint_julep_approx;
+		text-align: left;
+		padding-left: 10px;
+		&.tg-foto {
+			width: 118px;
+		}
+		&.tg-title {
+			width: 408px;
+		}
+		&.tg-price {
+			width: 160px;
+			padding-left: 0;
+			text-align: center;
+		}
+		&.tg-amount {
+			width: 142px;
+			padding-left: 0;
+			text-align: center;
+		}
+		&.tg-sum {
+			padding-left: 0;
+			text-align: center;
+		}
+	}
+	td {
+		padding: 0;
+		border-width: 1px;
+		overflow: hidden;
+		//Instead of the line below you could use @include word-break($value)
+		word-break: normal;
+		vertical-align: top;
+		padding-top: 21px;
+		p {
+			margin-bottom: 0.47em;
+		}
+		div {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&.tg-foto img {
+			max-width: 100%;
+		}
+	}
+}
+div {
+	&.tg-title {
+		border-right: 1px solid $color_quill_gray_approx;
+		padding-top: 12px;
+		min-height: 68px;
+	}
+	&.tg-price {
+		border-right: 1px solid $color_quill_gray_approx;
+		padding-top: 20px;
+		text-align: center;
+		min-height: 68px;
+		font-weight: 600;
+	}
+	&.tg-amount {
+		border-right: 1px solid $color_quill_gray_approx;
+		padding-top: 14px;
+		text-align: center;
+		min-height: 68px;
+	}
+	&.tg-sum {
+		text-align: center;
+		padding-top: 20px;
+		font-weight: 600;
+	}
+}
+.tg-amount {
+	.qty {
+		width: 38px;
+		height: 28px;
+		margin: 0;
+		font-weight: 600;
+	}
+	form {
+		display: table;
+		margin: 0 auto;
+	}
+	input {
+		&.qtyplus {
+			background: transparent;
+			font-size: $fsize1_5;
+		}
+		&.qtyminus {
+			background: transparent;
+			font-size: $fsize1_5;
+		}
+	}
+}
+.intotal {
+	margin: 12px 0 20px;
+	text-align: right;
+	background: $color_wild_sand;
+	font-size: 1.24em;
+	padding: 12px 25px 12px 0;
+	span {
+		color: $color_mountain_mist_approx;
+	}
+}
+.cart_nav_bot {
+	margin-bottom: 64px;
+	width: 100%;
+	float: left;
+	a {
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: $fsize0_86;
+	}
+}
+.related {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding-bottom: 335px;
+	h2 {
+		font-size: $fsize1_3;
+		color: $black;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 34px;
+	}
+}
+.rel-carousel-wrap {
+	position: absolute;
+	left: 10px;
+}
+.rel-carousel {
+	display: block;
+	margin: 0 auto;
+	li {
+		width: 240px;
+		height: 450px;
+	}
+}
+.rslide {
+	width: 212px;
+	height: 312px;
+	margin: 0 auto;
+	border: 1px solid $color_quill_gray_approx;
+	padding: 8px;
+	position: relative;
+	img {
+		display: block;
+		margin: 0 auto 12px auto;
+		max-width: 100%;
+	}
+	> div {
+		color: $color_storm_dust_approx;
+	}
+	p {
+		color: $color_storm_dust_approx;
+		font-size: $fsize0_86;
+		margin-bottom: 10px;
+		&.rscode {
+			color: $color_mountain_mist_approx;
+			background: $size no-repeat left;
+			padding-left: 18px;
+		}
+	}
+}
+.prev {
+	@extend %extend_2;
+	left: -17px;
+	i {
+		font-size: $fsize2_4;
+	}
+}
+.next {
+	@extend %extend_2;
+	right: -17px;
+	i {
+		font-size: $fsize2_4;
+	}
+}
+.rstitle {
+	margin-bottom: 10px;
+	a {
+		font-size: 1.067em;
+		color: $black;
+		text-decoration: none;
+		&:hover {
+			color: $color_tree_poppy_approx;
+		}
+	}
+}
+.rsprice {
+	background: $color_gray_nurse_approx;
+	margin-bottom: 8px;
+	text-align: center;
+	padding: 8px 0;
+	display: block;
+}
+.rsbot {
+	position: relative;
+}
+.toggle-amount {
+	width: 210px;
+	height: 112px;
+	padding: 10px 0 0;
+	display: none;
+	position: absolute;
+	top: 35px;
+	z-index: 999;
+	border-bottom: 1px solid $color_celeste_approx;
+	border-right: 1px solid $color_celeste_approx;
+	border-left: 1px solid $color_celeste_approx;
+	background: linear-gradient(to bottom, $color_alabaster_approx 0,$color_gallery_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_alabaster_approx', endcolorstr='$color_gallery_approx',gradienttype=0 );
+	p {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: $fsize1;
+	}
+	input {
+		&.qtyplus {
+			@extend %extend_3;
+		}
+		&.qtyminus {
+			@extend %extend_3;
+		}
+	}
+	.qty {
+		text-align: center;
+		font-size: $fsize0_78;
+		border: none;
+		width: 65px;
+		height: 19px;
+		float: left;
+		margin: 0 17px;
+	}
+	form {
+		display: table;
+		position: relative;
+		margin: 0 auto 25px auto;
+		span {
+            position: absolute;
+            font-size: $fsize0_86;
+            top: 27px;
+            left: 0;
+            display: block;
+            text-align: center;
+            width: 100%;
+		}
+	}
+}
+.removeb {
+	width: 100%;
+	border-top: 1px solid $color_celeste_approx;
+	text-align: center;
+	padding-top: 7px;
+	a {
+		text-decoration: none;
+		color: $color_tango_approx;
+		font-weight: 600;
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}
+.bread {
+	width: 100%;
+	float: left;
+	margin-bottom: 27px;
+	li {
+		float: left;
+		margin-right: 12px;
+		i {
+			font-size: $fsize1;
+		}
+	}
+	a {
+		color: $black;
+		font-size: $fsize0_86;
+		text-decoration: none;
+		&.curr {
+			text-decoration: underline;
+			color: $color_storm_dust_approx;
+		}
+		&:hover {
+			text-decoration: underline;
+			color: $color_storm_dust_approx;
+		}
+	}
+}
+.sortbox {
+	width: 100%;
+	float: left;
+	margin-bottom: 12px;
+}
+.sort {
+	display: inline-block;
+	float: left;
+	width: 440px;
+	button {
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		margin-left: 30px;
+		font-size: $fsize0_93;
+		padding: 1px 5px 2px;
+		&.active {
+			background: $color_alto_approx;
+		}
+		&:hover {
+			background: $color_alto_approx;
+		}
+	}
+}
+.count-page {
+	display: inline-block;
+	float: right;
+	width: 241px;
+	button {
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		margin-left: 10px;
+		font-size: $fsize0_93;
+		padding: 1px 5px 2px;
+		&.active {
+			background: $color_alto_approx;
+		}
+		&:hover {
+			background: $color_alto_approx;
+		}
+	}
+}
+.alphabet {
+	width: 100%;
+	float: left;
+	margin-bottom: 22px;
+	border-top: 1px solid $color_quill_gray_approx;
+	border-bottom: 1px solid $color_quill_gray_approx;
+	padding: 2px 0 3px 5px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	li {
+		float: left;
+		font-size: $fsize0_93;
+		line-height: 150%;
+		span {
+			margin-right: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: $color_storm_dust_approx;
+			text-transform: uppercase;
+			font-size: $fsize0_93;
+			margin-right: 3px;
+		}
+		&:after {
+			content: '\b7\a0';
+		}
+		&:last-child {
+			&:after {
+				content: '';
+			}
+			a {
+				margin-right: 0;
+			}
+		}
+		&:first-child:after {
+			content: '';
+		}
+		&.available a {
+			color: $black;
+			font-weight: 600;
+		}
+	}
+}
+.seemore {
+	width: 100%;
+	float: left;
+	margin: 12px 0;
+	text-align: center;
+	background: $color_wild_sand;
+	font-size: 1.24em;
+	padding: 12px 0;
+	a {
+		color: $black;
+		font-weight: 600;
+		text-decoration: none;
+		font-size: $fsize0_86;
+		span {
+			color: $color_mountain_mist_approx;
+		}
+	}
+}
+.catbox {
+	width: 100%;
+	float: left;
+	li {
+		float: left;
+		width: 300px;
+		margin-right: 36px;
+		margin-bottom: 39px;
+		position: relative;
+		border: 1px solid $color_star_dust_approx;
+		padding: 5px;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+	.cat-title {
+		margin-top: 0;
+		a {
+			font-family: $open_sans, $sans_serif;
+			font-size: 1.067em;
+			padding: 7px 0;
+		}
+	}
+}
+.c-title {
+	color: $black;
+	font-size: 1.24em;
+	font-weight: 600;
+	margin: 12px 0;
+	span {
+		color: $color_mountain_mist_approx;
+		font-size: 0.895em;
+		padding-left: 5px;
+	}
+}
+.descr {
+	display: none;
+	top: 5px;
+	left: 5px;
+	padding: 35px 16px 0;
+	width: 288px;
+	height: 248px;
+	position: absolute;
+	background: $white_90;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	p {
+		color: $color_storm_dust_approx;
+		margin-bottom: 19px;
+		span {
+			float: right;
+		}
+	}
+}
+.product-view {
+	width: 100%;
+	float: left;
+}
+.product-left {
+	width: 590px;
+	float: left;
+	margin-right: 50px;
+}
+.product-img-box {
+	width: 590px;
+	float: left;
+	border: 1px solid $color_pink_swan_approx;
+	padding: 27px 30px 30px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	.mid {
+		width: 526px;
+		height: 524px;
+		margin: 0 0 20px 0;
+		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+.product-img-box2 {
+	width: 590px;
+	float: left;
+	border: 1px solid $color_pink_swan_approx;
+	padding: 27px 0 30px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	.mid {
+		width: 100%;
+		height: 446px;
+		margin: 0 0 20px 0;
+		position: relative;
+		border-bottom: 1px solid $color_pink_swan_approx;
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+.carousel {
+	width: 530px!important;
+	height: 132px!important;
+	overflow: hidden;
+	margin: 0 auto;
+	li {
+		width: 132px;
+		height: 130px;
+		margin-right: 62px;
+		position: relative;
+		border: 1px solid $color_pink_swan_approx;
+		cursor: pointer;
+		&.active {
+			border: 1px solid $color_carrot_orange_approx;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+.prev-ps {
+	@extend %extend_4;
+	left: 0;
+	span {
+		@extend %extend_5;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6.5px 12px 6.5px 0;
+		border-color: transparent $color_dove_gray_approx transparent transparent;
+	}
+}
+.next-ps {
+	@extend %extend_4;
+	right: 0;
+	span {
+		@extend %extend_5;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6.5px 0 6.5px 12px;
+		border-color: transparent transparent transparent $color_dove_gray_approx;
+	}
+}
+.product-shop {
+	width: 309px;
+	float: left;
+	p.limited {
+		color: $black;
+		font-size: $fsize0_93;
+	}
+}
+.price-info {
+	background: $color_alabaster_approx;
+	width: 100%;
+	text-align: center;
+	padding: 17px 0;
+	p {
+		color: $color_delta_approx;
+		font-size: $fsize1_6;
+		font-weight: 500;
+		margin: 7px 0;
+		i {
+			font-size: $fsize0_86;
+			font-weight: 300;
+		}
+		span {
+			color: $color_storm_dust_approx;
+			font-weight: 600;
+			font-size: $fsize1;
+		}
+		small {
+			font-size: $fsize0_78;
+		}
+		sup small {
+			vertical-align: super;
+			font-size: 0.45em;
+			font-weight: 600;
+		}
+	}
+}
+.product-btn {
+	text-decoration: none;
+	color: $white;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $fsize0_93;
+	font-weight: 500;
+	padding: 9px 0;
+	margin-bottom: 12px;
+	background: linear-gradient(to right, $color_azure_radiance_approx 0,$color_dodger_blue_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_azure_radiance_approx', endcolorstr='$color_dodger_blue_approx',gradienttype=1 );
+	&:hover {
+		color: $white;
+		background: $color_azure_radiance_approx;
+	}
+	&:active {
+		color: $white;
+		background: $color_azure_radiance_approx;
+	}
+}
+.product-description {
+	width: 100%;
+	float: left;
+	padding: 28px 11px 18px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	background: $color_alabaster_approx;
+	margin-top: 30px;
+	margin-bottom: 22px;
+	table {
+		width: 100%;
+		td {
+			color: $color_mountain_mist_approx;
+			font-size: $fsize0_93;
+			padding-bottom: 12px;
+			&:nth-child(2) {
+				text-align: right;
+				color: $black;
+			}
+		}
+	}
+}
+.product-properties {
+	h3 {
+		text-align: center;
+		margin-bottom: 24px;
+		color: $color_mine_shaft_approx;
+		font-weight: 600;
+		font-size: 1.133em;
+	}
+	table {
+		width: 100%;
+		td {
+			color: $color_mountain_mist_approx;
+			font-size: $fsize0_93;
+			padding-bottom: 12px;
+			&:nth-child(2) {
+				text-align: right;
+				color: $black;
+			}
+		}
+	}
+}
+.small-carousrl {
+	width: 950px;
+	float: left;
+	margin: 40px 0 30px;
+	h3 {
+		text-align: center;
+		margin-bottom: 24px;
+		color: $color_mine_shaft_approx;
+		font-weight: 600;
+		font-size: 1.133em;
+	}
+}
+.collslider {
+	width: 100%;
+	float: left;
+	position: relative;
+	border-top: 1px solid $color_delta_approx;
+	border-bottom: 1px solid $color_delta_approx;
+	height: 53px;
+}
+.collections {
+	width: 882px!important;
+	margin-left: 30px;
+	li {
+		float: left;
+		text-align: center;
+		margin: 16px 30px 0 0px;
+		width: auto!important;
+		a {
+			text-decoration: none;
+			color: $color_storm_dust_approx;
+			font-size: $fsize1_2;
+			&:hover {
+				color: $color_tree_poppy_approx;
+			}
+		}
+	}
+}
+.prev2 {
+	@extend %extend_6;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6.5px 12px 6.5px 0;
+	border-color: transparent $color_dove_gray_approx transparent transparent;
+}
+.next2 {
+	@extend %extend_6;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6.5px 0 6.5px 12px;
+	border-color: transparent transparent transparent $color_dove_gray_approx;
+}
+.other {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding-bottom: 0;
+	min-height: 385px;
+	h3 {
+		text-align: center;
+		margin-bottom: 24px;
+		color: $color_mine_shaft_approx;
+		font-weight: 600;
+		font-size: 1.133em;
+	}
+	ul {
+		position: absolute;
+	}
+	li {
+		width: 240px;
+		height: 450px;
+		float: left;
+	}
+}
+.otherbox {
+	width: 212px;
+	height: 342px;
+	margin: 0;
+	border: 1px solid $color_quill_gray_approx;
+	padding: 8px;
+	position: relative;
+	img {
+		display: block;
+		margin: 0 auto 12px auto;
+		max-width: 100%;
+	}
+	> div {
+		color: $color_storm_dust_approx;
+	}
+	p {
+		color: $color_storm_dust_approx;
+		font-size: $fsize0_86;
+		margin-bottom: 10px;
+		&.rscode {
+			color: $color_mountain_mist_approx;
+			background: $size no-repeat left;
+			padding-left: 18px;
+		}
+		&.odescr {
+			color: $black;
+			span {
+				color: $color_storm_dust_approx;
+				text-align: right;
+				float: right;
+				background: $size no-repeat left;
+				padding-left: 18px;
+			}
+		}
+		&.ocode {
+			background: $color_snowy_mint_approx;
+			color: $color_mine_shaft_approx;
+			font-size: $fsize0_93;
+			padding: 8px 0;
+			text-align: center;
+			strong {
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+.prod-top {
+	width: 100%;
+	float: left;
+	border-top: 1px solid $color_pink_swan_approx;
+	padding-top: 12px;
+	margin-bottom: 16px;
+	li {
+		float: left;
+		color: $black;
+		margin-right: 22px;
+	}
+}
+.prod-code {
+	width: 100%;
+	float: left;
+	border: 1px solid $color_green_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	padding: 12px;
+	padding-bottom: 6px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	p {
+		color: $color_mine_shaft_approx;
+		font-size: $fsize0_86;
+		margin-bottom: 8px;
+		line-height: 120%;
+		strong {
+			font-size: $fsize1_3;
+			font-weight: 600;
+		}
+		i {
+			font-style: italic;
+			color: $color_storm_dust_approx;
+			font-size: $fsize0_93;
+		}
+	}
+}
+.clearfix {
+	width: 100%;
+	float: left;
+	display: block;
+	height: 42px;
+}
+.prev-ps2 {
+	@extend %extend_7;
+	left: 0;
+	span {
+		@extend %extend_8;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6.5px 12px 6.5px 0;
+		border-color: transparent $color_dove_gray_approx transparent transparent;
+	}
+}
+.next-ps2 {
+	@extend %extend_7;
+	right: 0;
+	span {
+		@extend %extend_8;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6.5px 0 6.5px 12px;
+		border-color: transparent transparent transparent $color_dove_gray_approx;
+	}
+}
+.lbox {
+	width: 100%;
+	float: left;
+	margin-top: 12px;
+	.rsprice {
+		width: 248px;
+		float: left;
+		margin: 0 25px 0 45px;
+		padding: 8px 0;
+		font-size: $fsize1_2;
+	}
+}
+.rstocart {
+	width: 198px;
+	float: left;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+}
+#fadeandscale {
+	width: 1360px;
+	height: 640px;
+	background: $white;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: scale(0.8);
+}
+.fadeandscale_close {
+	position: absolute;
+	right: -55px;
+	border: none;
+	background: transparent $close2 no-repeat right;
+	cursor: pointer;
+	width: 55px;
+	height: 29px;
+}
+.popup-left {
+	width: 1000px;
+	float: left;
+	position: relative;
+	.prev {
+		left: 0;
+		top: 0;
+		height: 385px;
+		width: 52px;
+		i {
+			font-size: 3em;
+			top: 50%;
+			position: absolute;
+			right: 0;
+		}
+	}
+	.next {
+		right: 0;
+		top: 0;
+		height: 385px;
+		width: 52px;
+		i {
+			font-size: 3em;
+			top: 50%;
+			position: absolute;
+			left: 0;
+		}
+	}
+	.pr-cat {
+		width: 100%;
+		float: left;
+		padding-left: 28px;
+		margin-bottom: 18px;
+		li {
+			float: left;
+			margin-right: 21px;
+		}
+	}
+}
+.popup-right {
+	padding: 0 0 0 26px;
+	width: 360px;
+	height: 589px;
+	float: left;
+	border-left: 1px solid $color_silver_chalice_approx;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	h4 {
+		text-align: center;
+		color: $color_mine_shaft_approx;
+		font-weight: 600;
+		font-size: 1.133em;
+	}
+	p.ocode {
+		background: $color_snowy_mint_approx;
+		color: $color_mine_shaft_approx;
+		font-size: $fsize0_93;
+		padding: 8px 0;
+		text-align: center;
+		margin-bottom: 28px;
+		strong {
+			font-size: 1.1em;
+		}
+	}
+}
+.popup-product-description {
+	width: 100%;
+	float: left;
+	padding: 12px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	background: $color_alabaster_approx;
+	margin-top: 28px;
+	margin-bottom: 22px;
+	table {
+		width: 100%;
+		td {
+			color: $color_mountain_mist_approx;
+			font-size: $fsize0_93;
+			padding-bottom: 12px;
+			&:nth-child(2) {
+				text-align: right;
+				color: $black;
+			}
+		}
+	}
+}
+.popup-info {
+	margin-top: 34px;
+	margin-bottom: 6px;
+	background: $color_alabaster_approx;
+	padding: 19px 0 16px;
+	input {
+		&.qtyplus {
+			width: 42px;
+		}
+		&.qtyminus {
+			width: 42px;
+		}
+	}
+	div.tg-amount {
+		border: none;
+	}
+	.tg-amount .qty {
+		width: 72px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+	}
+	a.rstocart {
+		text-align: left;
+		margin: 14px auto 0 auto;
+		float: none;
+		i {
+			margin-right: 16px;
+		}
+	}
+}
+.infoprice {
+	text-align: center;
+	strong {
+		font-weight: 600;
+	}
+}
+.unit {
+	margin-top: 8px;
+	small {
+		font-weight: 600;
+		font-size: 1.1em;
+	}
+	sup small {
+		vertical-align: super;
+		font-size: 0.55em;
+		font-weight: 600;
+	}
+}
+.popup-slider {
+	width: 560px!important;
+	height: 340px;
+	margin: 42px auto 22px auto;
+	li {
+		width: 560px!important;
+		height: 340px!important;
+	}
+}
+.pr-cat {
+	width: 100%;
+	float: left;
+	padding-left: 14px;
+	margin-bottom: 18px;
+	li {
+		float: left;
+		margin-right: 21px;
+		a {
+			text-decoration: none;
+			border-bottom: 1px dotted $color_storm_dust_approx;
+			color: $color_mountain_mist_approx;
+			font-size: $fsize0_93;
+			&:hover {
+				color: $black;
+				border-bottom: none;
+			}
+		}
+		&.active a {
+			color: $black;
+			border-bottom: none;
+		}
+	}
+}
+.popup-thumbs {
+	width: 100%;
+	float: left;
+	ul {
+		display: table;
+		margin: 0 auto;
+	}
+	li {
+		float: left;
+		width: 132px;
+		height: 130px;
+		margin-right: 40px;
+		position: relative;
+		border: 1px solid $color_pink_swan_approx;
+		cursor: pointer;
+		&:last-child {
+			margin-right: 0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+span.customSelect {
+	background: $color_fuscous_gray_approx $arrows 172px -14px no-repeat;
+	border: 1px solid $black;
+	padding: 6px 0;
+	color: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	width: 196px;
+	text-align: center;
+	font-size: $fsize0_9;
+	font-family: $open_sans, $sans_serif;
+}
+.catpage h1 {
+	text-align: left;
+	font-size: $fsize1_4;
+	margin-bottom: 23px;
+}
+.product h1 {
+	text-align: left;
+	font-size: $fsize1_4;
+	margin-bottom: 12px;
+}
+.mid a span {
+	background-image: $zoom;
+	background-repeat: no-repeat;
+	width: 62px;
+	height: 62px;
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.popup_visible #fadeandscale {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: scale(1);
+}
+.popupproduct h3 {
+	color: $color_storm_dust_approx;
+	font-size: $fsize1_4;
+	background: $color_gray_nurse_approx;
+	text-align: center;
+	padding: 15px 0;
+}
